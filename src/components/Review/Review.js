@@ -20,7 +20,10 @@ const Review = () => {
         <div>
             <h1>Ordered Items: {cart.length}</h1>
             {
-                cart.map(pd => <ReviewItem product={pd}></ReviewItem>)
+                cart.map(pd => <ReviewItem 
+                    product={pd}
+                    key={pd.key}
+                    ></ReviewItem>)
             }
         </div>
     );
